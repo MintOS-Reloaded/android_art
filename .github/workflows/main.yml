@@ -20,7 +20,7 @@ jobs:
       run: |
         git config --global user.name "${GITHUB_USER}"
         git config --global user.email "${GITHUB_EMAIL}"
-        git clone https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/Mint-OS/android_art.git -b ${{ matrix.branch }}
+        git clone https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/MintOS-Revived/android_art.git -b ${{ matrix.branch }}
         cd android_art
         git fetch https://github.com/LineageOS/android_art.git ${{ matrix.branch }}
         git rebase FETCH_HEAD
